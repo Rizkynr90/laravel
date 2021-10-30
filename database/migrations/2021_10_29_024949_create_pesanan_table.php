@@ -15,6 +15,8 @@ class CreatePesananTable extends Migration
     {
         Schema::create('pesanan', function (Blueprint $table) {
             $table->id();
+        //  $table->unsignedBigInteger('id_barang');
+        //  $table->foreign('id_barang')->references('id')->on('barang');
             $table->string('nama_pelanggan');
             $table->string('nama_barang');
             $table->integer('qty');

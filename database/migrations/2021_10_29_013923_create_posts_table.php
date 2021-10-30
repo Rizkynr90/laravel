@@ -15,8 +15,8 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id(); //id integer primary key AUTO_INCREMENT
-            $table->string('Judul');
-            $table->text('Konten');
+            $table->string('title');
+            $table->text('content');
             $table->timestamps();
         });
     }

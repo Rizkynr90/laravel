@@ -17,16 +17,16 @@ class PostsSeeder extends Seeder
         // membuat sample data dari table posts
         $data = [
             [
-                'Judul' => 'ACDC Lightning',
-                'Konten' => 'Lightning World'
+                'title' => 'ACDC Lightning',
+                'content' => 'Lightning World'
             ],
             [
-                'Judul' => 'Reading A book',
-                'Konten' => 'Improve Your Brain'
+                'title' => 'Reading A book',
+                'content' => 'Improve Your Brain'
             ],
             [
-                'Judul' => 'Course English',
-                'Konten' => 'Listening and Speaking'
+                'title' => 'Course English',
+                'content' => 'Listening and Speaking'
             ]
         ];
         DB::table('posts')->insert($data);

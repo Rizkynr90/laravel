@@ -15,7 +15,11 @@ class CreatePembelianTable extends Migration
     {
         Schema::create('pembelian', function (Blueprint $table) {
             $table->id();
+        //  $table->unsignedBigInteger('id_barang');
+        //  $table->foreign('id_barang')->references('id')->on('barang');
             $table->string('nama_barang');
+        //  $table->unsignedBigInteger('id_suplier');
+        //  $table->foreign('id_suplier')->references('id')->on('suplier');
             $table->string('nama_suplier');
             $table->integer('qty');
             $table->date('tgl');
