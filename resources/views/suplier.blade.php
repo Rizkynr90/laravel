@@ -8,12 +8,11 @@
 </head>
 <body>
     <fieldset>
-        <legend>Data Posts</legend>
-        <br>
-        @foreach ($posts as $data)
-            <strong>{{$data->title}}</strong><br>
-            {{$data->content}}<hr>
-        @endforeach
+        <legend>
+            @foreach ($suplier as $data)
+
+            @endforeach
+        </legend>
     </fieldset>
 </body>
 </html>

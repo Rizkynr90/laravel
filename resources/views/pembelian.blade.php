@@ -8,11 +8,13 @@
 </head>
 <body>
     <fieldset>
-        <legend>Data Posts</legend>
+        <legend>Data Pembelian</legend>
         <br>
-        @foreach ($posts as $data)
-            <strong>{{$data->title}}</strong><br>
-            {{$data->content}}<hr>
+        @foreach ($pembelian as $data)
+            Nama Barang : {{$data->nama_barang}}<br>
+            Nama Suplier : {{$data->nama_suplier}}<br>
+            Jumlah Barang : {{$data->qty}}<br>
+            Tanggal : {{$data->tgl}}<hr>
         @endforeach
     </fieldset>
 </body>

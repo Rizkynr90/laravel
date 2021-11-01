@@ -144,4 +144,15 @@ Route::get('suplier', function () {
     $query = App\Models\Suplier::all();
     return $query;
 });
-Route::get('datasiswa', [MyController::class, 'posting']);
+// Route::get('datasiswa', [MyController::class, 'index']);
+// Route::get('posts', [MyController::class, 'posting']);
+// Route::get('barang1', [MyController::class, 'barang']);
+// Route::get('pembeli1', [MyController::class, 'pembeli']);
+
+Route::get('pembelian1', [MyController::class, 'pembelian']);
+Route::get('pembelian1/{id}', [MyController::class, 'single']);
+
+// Route::get('pesanan1', [MyController::class, 'pesanan']);
+// Route::get('suplier1', [MyController::class, 'suplier']);
+
+
