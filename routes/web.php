@@ -144,4 +144,4 @@ Route::get('suplier', function () {
     $query = App\Models\Suplier::all();
     return $query;
 });
-Route::get('datasiswa', [MyController::class, 'index']);
+Route::get('datasiswa', [MyController::class, 'posting']);
