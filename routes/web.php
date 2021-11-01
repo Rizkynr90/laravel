@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MyController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -143,3 +144,4 @@ Route::get('suplier', function () {
     $query = App\Models\Suplier::all();
     return $query;
 });
+Route::resource('latihan', MyController::class);
