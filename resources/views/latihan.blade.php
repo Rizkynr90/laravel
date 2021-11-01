@@ -10,8 +10,8 @@
     <fieldset>
         <legend>Passing Data From Controller to View</legend>
         @foreach ($data as $siswa)
-            {{$siswa['nama']}}
-            {{$siswa['kelas']}}<br>
+            {{$siswa['nama']}} #
+            {{$siswa['kelas']}}<hr>
         @endforeach
     </fieldset>
 </body>

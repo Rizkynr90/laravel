@@ -144,4 +144,4 @@ Route::get('suplier', function () {
     $query = App\Models\Suplier::all();
     return $query;
 });
-Route::resource('latihan', MyController::class);
+Route::get('datasiswa', [MyController::class, 'index']);
