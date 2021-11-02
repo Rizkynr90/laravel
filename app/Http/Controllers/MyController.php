@@ -44,7 +44,7 @@ class MyController extends Controller
     }
     public function single($id)
     {
-        $data = Pembelian::find($id);
+        $data = Pembelian::findOrFail($id);
         return view('single', compact('data'));
     }
     // public function pesanan()

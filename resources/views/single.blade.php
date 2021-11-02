@@ -13,7 +13,7 @@
             Nama Barang : {{$data['nama_barang']}}<br>
             Nama Suplier : {{$data['nama_suplier']}}<br>
             Jumlah Barang : {{$data['qty']}}<br>
-            Tanggal : {{$data['qty']}}<hr>
+            Tanggal : {{$data['tgl']}}<hr>
     </fieldset>
 </body>
 </html>
