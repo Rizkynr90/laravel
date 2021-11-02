@@ -26,7 +26,7 @@
                 <td>{{$single->element}}</td>
                 <td>{{$single->gender}}</td>
                 <td>{{$single->power}}</td>
-                @if ($single['power'] >= 100)
+            @if ($single['power'] >= 100)
                 @php
                     $ket = "Sangat Kuat";
                 @endphp
