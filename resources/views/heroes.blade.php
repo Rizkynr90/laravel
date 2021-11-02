@@ -11,18 +11,21 @@
     <center>
     <table border="1" style="margin-top: 10%">
         <tr>
-       <th bgcolor="yellow" colspan="6">Data Heroes</th>
+       <th bgcolor="yellow" colspan="9">Data Heroes</th>
         </tr>
         <tr>
+            <th>ID</th>
             <th>Real Name</th>
             <th>Hero Name</th>
             <th>Element</th>
             <th>Gender</th>
             <th>Power</th>
             <th>Keterangan</th>
+            <th colspan="2">Actions</th>
         </tr>
         @foreach ($hero as $data)
         <tr>
+            <td>{{$data->id}}</td>
             <td>{{$data->real_name}}</td>
             <td>{{$data->hero_name}}</td>
             <td>{{$data->element}}</td>
@@ -45,7 +48,9 @@
                 $ket = "Manusia Biasa";
             @endphp
         @endif
-        <td>{{$ket}}</td>
+            <td>{{$ket}}</td>
+            <td><button class="btn btn-warning">Show</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
         </tr>
         @endforeach
     </table>
