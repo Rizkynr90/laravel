@@ -10,6 +10,8 @@
     <fieldset>
         <legend>Data Pembelian</legend>
         <br>
+
+
         @foreach ($pembelian as $data)
             Nama Barang : {{$data->nama_barang}}<br>
             Nama Suplier : {{$data->nama_suplier}}<br>

@@ -10,6 +10,7 @@
     <fieldset>
         <legend>Data Pembelian</legend>
         <br>
+
             Nama Barang : {{$data['nama_barang']}}<br>
             Nama Suplier : {{$data['nama_suplier']}}<br>
             Jumlah Barang : {{$data['qty']}}<br>

@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
                     PesananSeeder::class,
                     PembelianSeeder::class,
                     PembeliSeeder::class,
-                    SuplierSeeder::class
+                    SuplierSeeder::class,
+                    HeroSeeder::class
         ]);
     }
 }

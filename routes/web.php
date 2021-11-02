@@ -153,6 +153,7 @@ Route::get('pembelian1', [MyController::class, 'pembelian']);
 Route::get('pembelian1/{id}', [MyController::class, 'single']);
 
 // Route::get('pesanan1', [MyController::class, 'pesanan']);
-// Route::get('suplier1', [MyController::class, 'suplier']);
+Route::get('suplier1', [MyController::class, 'suplier']);
 
-
+Route::get('hero', [MyController::class, 'hero']);
+Route::get('hero/{id}', [MyController::class, 'singlehero']);

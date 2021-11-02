@@ -9,6 +9,8 @@ use App\Models\Pembeli;
 use App\Models\Pembelian;
 use App\Models\Pesanan;
 use App\Models\Suplier;
+use App\Models\Hero;
+
 
 
 class MyController extends Controller
@@ -47,14 +49,24 @@ class MyController extends Controller
         $data = Pembelian::findOrFail($id);
         return view('single', compact('data'));
     }
-    // public function pesanan()
-    // {
-    //     $pesanan = Pesanan::all();
-    //     return view('pesanan', compact('pesanan'));
-    // }
-    // public function suplier()
-    // {
-    //     $suplier = Suplier::all();
-    //     return view('suplier', compact('suplier'));
-    // }
+    public function pesanan()
+    {
+        $pesanan = Pesanan::all();
+        return view('pesanan', compact('pesanan'));
+    }
+    public function suplier()
+    {
+        $suplier = Suplier::all();
+        return view('suplier', compact('suplier'));
+    }
+    public function hero()
+    {
+        $hero = Hero::all();
+        return view('heroes', compact('hero'));
+    }
+    public function singlehero($id)
+    {
+        $single = Hero::findOrFail($id);
+        return view('singlehero', compact('single'));
+    }
 }

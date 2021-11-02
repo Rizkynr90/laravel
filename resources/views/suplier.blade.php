@@ -8,11 +8,14 @@
 </head>
 <body>
     <fieldset>
-        <legend>
+        <legend>Data Suplier</legend>
             @foreach ($suplier as $data)
-
+                Nama : {{$data->nama}}<br>
+                Alamat : {{$data->alamat}}<br>
+                Kode Pos : {{$data->kode_pos}}<br>
+                Kota : {{$data->kota}}<hr>
             @endforeach
-        </legend>
+
     </fieldset>
 </body>
 </html>
