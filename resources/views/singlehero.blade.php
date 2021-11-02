@@ -7,16 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <fieldset>
-        <legend>Data Heroes</legend>
-        <br>
-            Real Name : {{$single['real_name']}}<br>
-            Hero Name : {{$single['hero_name']}}<br>
-            Element : {{$single['element']}}<br>
-            Gender : {{$single['gender']}}<br>
-            Power : {{$single['power']}}<br>
-
-            @if ($single['power'] >= 100)
+    <center>
+        <table border="1" style="margin-top: 10%">
+            <tr>
+           <th bgcolor="yellow" colspan="6">Data Heroes</th>
+            </tr>
+            <tr>
+                <th>Real Name</th>
+                <th>Hero Name</th>
+                <th>Element</th>
+                <th>Gender</th>
+                <th>Power</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>{{$single->real_name}}</td>
+                <td>{{$single->hero_name}}</td>
+                <td>{{$single->element}}</td>
+                <td>{{$single->gender}}</td>
+                <td>{{$single->power}}</td>
+                @if ($single['power'] >= 100)
                 @php
                     $ket = "Sangat Kuat";
                 @endphp
@@ -33,7 +43,9 @@
                     $ket = "Manusia Biasa";
                 @endphp
             @endif
-            Keterangan : <b>{{$ket}}</b><hr>
-    </fieldset>
+            <td>{{$ket}}</td>
+            </tr>
+        </table>
+    </center>
 </body>
 </html>
