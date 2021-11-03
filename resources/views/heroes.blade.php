@@ -39,11 +39,11 @@
             @php
                 $ket = "Strong";
             @endphp
-        @elseif ($data->power >= 50)
+        @elseif ($data->power >= 20)
             @php
                 $ket = "Weak";
             @endphp
-        @elseif ($data->power <= 20)
+        @else
             @php
                 $ket = "Non SuperHero";
             @endphp
