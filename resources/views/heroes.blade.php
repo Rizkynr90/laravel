@@ -49,8 +49,8 @@
             @endphp
         @endif
             <td>{{$ket}}</td>
-            <td><button class="btn btn-warning">Show</button></td>
-            <td><button class="btn btn-danger">Delete</button></td>
+            <td><a type="submit" href="{{url('hero', $data->id)}}" class="btn btn-warning">Show</a></td>
+            <td><a type="submit" href="#" class="btn btn-danger">Delete</a></td>
         </tr>
         @endforeach
     </table>

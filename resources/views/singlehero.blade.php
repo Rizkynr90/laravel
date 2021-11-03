@@ -34,5 +34,6 @@
             @endif
                 Statement : {{$ket}}<hr>
     </fieldset>
+    <a href="{{url('hero')}}">Back</a>
 </body>
 </html>
