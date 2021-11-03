@@ -42,7 +42,7 @@ class HeroSeeder extends Seeder
             [
                 'real_name' => 'Victor',
                 'hero_name' => 'Cybord',
-                'element' => 'Ice',
+                'element' => 'Fire',
                 'gender' => 'Male',
                 'power' => '75']
         ]);

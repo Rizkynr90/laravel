@@ -19,7 +19,7 @@ class CreateHeroesTable extends Migration
             $table->string('hero_name');
             $table->string('element');
             $table->string('gender');
-            $table->bigInteger('power');
+            $table->BigInteger('power');
             $table->timestamps();
         });
     }

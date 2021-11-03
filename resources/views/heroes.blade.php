@@ -20,7 +20,7 @@
             <th>Element</th>
             <th>Gender</th>
             <th>Power</th>
-            <th>Keterangan</th>
+            <th>Statements</th>
             <th colspan="2">Actions</th>
         </tr>
         @foreach ($hero as $data)
@@ -31,21 +31,21 @@
             <td>{{$data->element}}</td>
             <td>{{$data->gender}}</td>
             <td>{{$data->power}}</td>
-        @if ($data['power'] >= 100)
+        @if ($data->power >= 100)
             @php
-                $ket = "Sangat Kuat";
+                $ket = "Powerful";
             @endphp
-        @elseif ($data['power'] >= 75)
+        @elseif ($data->power >= 75)
             @php
-                $ket = "Kuat";
+                $ket = "Strong";
             @endphp
-        @elseif ($data['power'] >= 50)
+        @elseif ($data->power >= 50)
             @php
-                $ket = "Lemah";
+                $ket = "Weak";
             @endphp
-        @elseif ($data['power'] <= 20)
+        @elseif ($data->power <= 20)
             @php
-                $ket = "Manusia Biasa";
+                $ket = "Non SuperHero";
             @endphp
         @endif
             <td>{{$ket}}</td>

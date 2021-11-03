@@ -7,50 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-    <center>
-        <table border="1" style="margin-top: 10%">
-            <tr>
-           <th bgcolor="yellow" colspan="9">Data Heroes</th>
-            </tr>
-            <tr>
-                <th>ID</th>
-                <th>Real Name</th>
-                <th>Hero Name</th>
-                <th>Element</th>
-                <th>Gender</th>
-                <th>Power</th>
-                <th>Keterangan</th>
-                <th colspan="2">Actions</th>
-            </tr>
-            <tr>
-                <td>{{$single->id}}</td>
-                <td>{{$single->real_name}}</td>
-                <td>{{$single->hero_name}}</td>
-                <td>{{$single->element}}</td>
-                <td>{{$single->gender}}</td>
-                <td>{{$single->power}}</td>
-            @if ($single['power'] >= 100)
+    <fieldset>
+        <legend>Data Heroes</legend>
+        ID : {{ $single['id']}}<br>
+        Real Name : {{ $single['real_name']}}<br>
+        Hero Name : {{ $single['hero_name']}}<br>
+        Element : {{ $single['element']}}<br>
+        Gender : {{ $single['gender']}}<br>
+        Power : {{ $single['power']}}<br>
+        @if ($single['power'] >= 100)
                 @php
-                    $ket = "Sangat Kuat";
+                    $ket = "Powerful";
                 @endphp
             @elseif ($single['power'] >= 75)
                 @php
-                    $ket = "Kuat";
+                    $ket = "Strong";
                 @endphp
             @elseif ($single['power'] >= 50)
                 @php
-                    $ket = "Lemah";
+                    $ket = "Weak";
                 @endphp
             @elseif ($single['power'] <= 20)
                 @php
-                    $ket = "Manusia Biasa";
+                    $ket = "Non SuperHero";
                 @endphp
             @endif
-                <td>{{$ket}}</td>
-                <td><button class="btn btn-warning">Show</button></td>
-                <td><button class="btn btn-danger">Delete</button></td>
-            </tr>
-        </table>
-    </center>
+                Statement : {{$ket}}<hr>
+    </fieldset>
 </body>
 </html>
